@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robi Greetings Card</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="./output.css" rel="stylesheet">
+  
+</head>
+<body>
+
+    <section class="w-full min-h-screen relative flex justify-center items-center flex-col px-4 md:py-10 py-5">
+        <img class="hidden md:block absolute top-0 left-0 w-full h-full object-cover object-top -z-10" alt="" src="img/bg-desktop.png" />
+        <img class="md:hidden absolute top-0 left-0 w-full h-full object-cover object-top -z-10" alt="" src="img/bg-mobile.png" />
+        
+        <div class="z-10 mb-6">
+            <img src="img/robi.png" alt="Robi Logo" class="h-14 mx-auto" />
+        </div>
+        <div class="w-full sm:max-w-[538px] mx-auto">
+            
+            <div class="z-10 bg-white shadow-xl rounded-xl w-full p-6 space-y-4">
+                <div class="flex justify-between items-center">
+                    <h2 class="text-[22px] md:text-[31px] font-semibold text-[#BC2626] font-nunito ">Robi Greetings Card</h2>
+                    <div class="flex items-center space-x-1">
+                        <label class="relative inline-flex items-center cursor-pointer">
+                        <input type="checkbox" class="sr-only peer">
+                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:bg-[#BC2626]"></div>
+                        <span class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full transition-all peer-checked:translate-x-full"></span>
+                        </label>
+                        <span class="text-xs text-[#BC2626] font-semibold">EN</span>
+                    </div>
+                </div>
+                <div class="relative bg-white border border-gray-100 rounded-lg z-50 p-4">
+                    <div class="w-full h-full">
+                        <form class="space-y-3">
+                            <div>
+                                <label class="text-[18px] text-[#5E6A7A] font-medium">Name</label>
+                                <input type="text" placeholder="@name" class="w-full mt-1 px-4 py-2 border rounded-md focus:outline-none">
+                            </div>
+                            <div>
+                                <label class="text-[18px] text-[#5E6A7A] font-medium">Designation</label>
+                                <input type="text" placeholder="@designation" class="w-full mt-1 px-4 py-2 border rounded-md focus:outline-none">
+                            </div>
+                            <div>
+                                <label class="text-[18px] text-[#5E6A7A] font-medium">Company</label>
+                                <input type="text" value="Robi Axiata Limited" class="w-full text-[#CBCBCB] mt-1 px-4 py-2 focus:outline-none border rounded-md">
+                            </div>
+                            <button type="submit" class="w-full bg-[#5B2D90] hover:bg-[#5B2D90] text-white py-2 font-nunito font-medium text-[18px] rounded-md transition-all">
+                                Submit
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
